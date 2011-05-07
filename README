@@ -1,0 +1,14 @@
+NuScript
+
+NuScript is a .Net library providing an NUnit addin that can create test suites from DLR scripts in a specified directory.
+Initially, only Python (i.e. IronPython) scripts are supported, but the base classes in the library allow for easy extension.
+
+To use NuScript, create a class library and reference NuScript and NUnit.core.interfaces.
+Create a public class in your library which inherits from ScriptSuiteBuilder. Mark this class with the NUnitAddIn attribute.
+Create another public class which inherits from PythonSuiteDefinition. Override the implementation of the ScriptPath propert to return the path to the location of your Python scripts.
+
+
+
+Copyright Robert Lewis 2011.
+You may use the source code and binaries for any purpose, provided you give credit to the author.
+NO WARRANTY IS PROVIDED FOR ANY PURPOSE.
